@@ -1,0 +1,48 @@
+name: Fetch & Deploy
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # Daily at 09:00 UTC
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch data
+        env:
+          PH_TOKEN: ${{ secrets.PH_TOKEN }}
+        run: |
+          # Create config from secret
+          cp config/settings.example.yml config/settings.yml
+          # Inject token
+          sed -i "s/YOUR_TOKEN_HERE/$PH_TOKEN/" config/settings.yml
+          python main.py fetch
+
+      - name: Generate static page
+        run: python src/gen_static.py data/producthunt.db public/index.html
+
+      - name: Add CNAME (optional)
+        run: |
+          # Uncomment below if using custom domain
+          # echo 'yourdomain.com' > public/CNAME
+          touch public/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy
+        uses: actions/deploy-pages@v4

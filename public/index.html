@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Hunt 每日趋势</title>
+<meta name="description" content="Product Hunt 热门产品每日追踪">
+<style>
+:root { --ph: #da552f; --bg: #fafafa; --card: #fff; --text: #333; --muted: #888; --border: #eee; --rank-bg: #da552f; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+header { background: linear-gradient(135deg, #da552f 0%, #b8441f 100%); color: #fff; padding: 28px 24px; text-align: center; }
+header h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+header p { font-size: 14px; opacity: 0.85; }
+.container { max-width: 800px; margin: 0 auto; padding: 20px 16px; }
+.product { background: var(--card); border-radius: 12px; padding: 18px; margin-bottom: 14px; border: 1px solid var(--border); transition: box-shadow 0.2s; }
+.product:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+.product .rank { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; line-height: 1; background: var(--rank-bg); color: #fff; border-radius: 50%; font-size: 12px; font-weight: 700; margin-right: 10px; vertical-align: middle; }
+.product .name { font-weight: 600; font-size: 16px; vertical-align: middle; }
+.product .tagline { color: var(--muted); font-size: 13px; margin: 6px 0 8px 36px; }
+.product .desc { color: #555; font-size: 13px; line-height: 1.8; margin: 0 0 10px 0; }
+.product .meta { font-size: 12px; color: var(--muted); }
+.product .meta span { margin-right: 14px; }
+.product .tags { margin-top: 6px; }
+.product a { color: var(--ph); text-decoration: none; font-size: 12px; font-weight: 500; }
+.product a:hover { text-decoration: underline; }
+.tag { display: inline-block; background: #f0f0f0; padding: 2px 8px; border-radius: 8px; font-size: 11px; margin-right: 4px; color: #666; }
+.empty { text-align: center; padding: 60px 20px; color: var(--muted); }
+footer { text-align: center; padding: 24px 20px; color: var(--muted); font-size: 12px; }
+@media (max-width: 480px) {
+  header h1 { font-size: 20px; }
+  .product { padding: 14px; }
+  .product .tagline, .product .desc { margin-left: 0; margin-top: 8px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Product Hunt · 每日趋势</h1>
+  <p>热门产品追踪 · 更新于 2026-07-06 15:26 UTC</p>
+</header>
+<main class="container">
+
+<article class="product">
+  <span class="rank">1</span>
+  <div class="name">Upstream</div>
+  <div class="tagline">The inbox designed for humans and agents</div>
+  <div class="desc">Upstream 是首个为人类和 AI 智能体共同设计的收件箱。智能体自动归类消息、起草回复、在后台处理琐碎工作，客户端体验精致到让邮件变得轻松、快速、有趣。</div>
+  <div class="meta">
+    <span>👍 936</span>
+    <span>💬 645</span>
+    <span>🔥 3177.8</span>
+    <a href="https://www.producthunt.com/r/RWE7MKUX4XZRYA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">email</span><span class="tag">productivity</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">2</span>
+  <div class="name">Acti</div>
+  <div class="tagline">Agentic keyboard for mobile commands and search</div>
+  <div class="desc">Acti 是一款移动端 Agentic 键盘。输入你的需求，长按 Acti Bar，它就能理解你的意图并直接返回结果、链接或执行操作——无需切换应用。用它查实时体育赛程、找附近餐厅、搜 Notion 文档、查 LinkedIn 资料、生成 Meet 链接、操作日历、运行自定义工作流，全程不离开当前页面。</div>
+  <div class="meta">
+    <span>👍 1130</span>
+    <span>💬 260</span>
+    <span>🔥 2410.0</span>
+    <a href="https://www.producthunt.com/r/JTS2SCFXSWS3V4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">custom-keyboards</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">3</span>
+  <div class="name">Goldfish</div>
+  <div class="tagline">Press Option. It knows your work and replies like you</div>
+  <div class="desc">Goldfish 能私密地记住你在 Mac 上所有工作上下文，然后从任何应用中帮你写得更好。大多数 AI 工具需要你先解释背景，Goldfish 已经知道了。在文本框中按 Option 键即可起草回复、总结对话、改写句子或调取重要信息。</div>
+  <div class="meta">
+    <span>👍 936</span>
+    <span>💬 302</span>
+    <span>🔥 2234.5</span>
+    <a href="https://www.producthunt.com/r/P4WFRWL26YL6CK?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">mac</span><span class="tag">productivity</span><span class="tag">artificial-intelligence</span><span class="tag">vercel-day</span></div>
+</article>
+<article class="product">
+  <span class="rank">4</span>
+  <div class="name">Tencent EdgeOne Makers</div>
+  <div class="tagline">Ship AI agents like web apps, in minutes.</div>
+  <div class="desc">腾讯云 EdgeOne Makers 是现代 Web 应用和 AI 智能体的边缘平台。用你熟悉的框架构建，通过 CLI、Git 和 CI/CD 流程部署。内置智能体运行时、沙箱工具、记忆、可观测性、模型网关、无服务器函数和存储。</div>
+  <div class="meta">
+    <span>👍 1012</span>
+    <span>💬 164</span>
+    <span>🔥 1969.0</span>
+    <a href="https://www.producthunt.com/r/F44CDFG34U37A3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">website-builder</span><span class="tag">artificial-intelligence</span><span class="tag">development</span></div>
+</article>
+<article class="product">
+  <span class="rank">5</span>
+  <div class="name">Context.dev</div>
+  <div class="tagline">One API to scrape, enrich, and extract the internet</div>
+  <div class="desc">Context.dev 是面向 AI 产品的 Web 上下文 API。通过一个 API 即可抓取任意 URL、爬取网站、将页面转为 LLM 可用的 Markdown、按自定义结构提取结构化数据、截图、以及获取 logo、配色、字体、品牌指南、公司数据和交易信息。</div>
+  <div class="meta">
+    <span>👍 1015</span>
+    <span>💬 138</span>
+    <span>🔥 1902.0</span>
+    <a href="https://www.producthunt.com/r/XBX6EKSLADLB4V?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">api-1</span><span class="tag">artificial-intelligence</span><span class="tag">data</span></div>
+</article>
+<article class="product">
+  <span class="rank">6</span>
+  <div class="name">Bond</div>
+  <div class="tagline">The AI to-do list that does itself</div>
+  <div class="desc">Bond 是高管级别的 AI 参谋长。它连接你的工具，了解公司运作方式，将散乱的任务转化为自我管理的待办清单，永远知道你下一步该做什么。可以要求 Bond 为会议准备材料、起草跟进、发送邮件。</div>
+  <div class="meta">
+    <span>👍 784</span>
+    <span>💬 188</span>
+    <span>🔥 1693.0</span>
+    <a href="https://www.producthunt.com/r/7SFOLQBBWUEQXW?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">task-management</span><span class="tag">virtual-assistants</span></div>
+</article>
+<article class="product">
+  <span class="rank">7</span>
+  <div class="name">Bluerails Discovery </div>
+  <div class="tagline">The rails AI agents use to find and pay you</div>
+  <div class="desc">Bluerails 让你对 AI 智能体可发现、可交易。大多数 AI 可见度工具只告诉你 AI 是否提到了你的品牌，Bluerails 走得更远——我们让 AI 智能体找到你并付款给你。提供 400 个样本的同行评审 AI 可见度评分。</div>
+  <div class="meta">
+    <span>👍 686</span>
+    <span>💬 192</span>
+    <span>🔥 1557.0</span>
+    <a href="https://www.producthunt.com/r/SES4UURPNBOQ2O?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">fintech</span><span class="tag">seo</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">8</span>
+  <div class="name">AgentX</div>
+  <div class="tagline">Evaluate AI agent, pinpoint issues, and fix with one click.</div>
+  <div class="desc">AgentX 在 AI 智能体失败前对其进行评估。创建测试套件、运行评估、在生产前精确定位问题。提供完整的可观测性和可追溯性。AI 分析不仅识别问题，还像 AI 医生一样为你的智能体提供修复建议。</div>
+  <div class="meta">
+    <span>👍 632</span>
+    <span>💬 175</span>
+    <span>🔥 1429.2</span>
+    <a href="https://www.producthunt.com/r/MAKIXB6C4DMJG6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">analytics</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">9</span>
+  <div class="name">Skybridge</div>
+  <div class="tagline">The full-stack open source React framework for MCP Apps</div>
+  <div class="desc">Skybridge 是面向 MCP 应用的全栈开源 React 框架。MCP 应用是新的网站：它们是运行在 ChatGPT 和 Claude 等 AI 助手内的真实交互式应用。构建工具之前不存在，所以我们自己做了。</div>
+  <div class="meta">
+    <span>👍 604</span>
+    <span>💬 182</span>
+    <span>🔥 1406.5</span>
+    <a href="https://www.producthunt.com/r/WYDUMMA2RJODS7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">open-source</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">10</span>
+  <div class="name">BrowserAct</div>
+  <div class="tagline">Web browser automation for AI agents</div>
+  <div class="desc">BrowserAct 专为使用网页的智能体而构建。它为智能体提供真实网站的浏览器层，可以绕过拦截页面、适应真实场景、安全运行多任务、返回干净的网页数据供推理使用。</div>
+  <div class="meta">
+    <span>👍 679</span>
+    <span>💬 124</span>
+    <span>🔥 1359.5</span>
+    <a href="https://www.producthunt.com/r/37BT52WEVJQBND?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">artificial-intelligence</span><span class="tag">github</span></div>
+</article>
+<article class="product">
+  <span class="rank">11</span>
+  <div class="name">Propane </div>
+  <div class="tagline">Automatic customer context for product teams and agents</div>
+  <div class="desc">Propane 为产品团队和智能体提供统一的、始终最新的客户视图。自动从所有工具收集数据，在共享画布上协作，直接提交给编码或设计智能体。安全、维护、始终在线。</div>
+  <div class="meta">
+    <span>👍 553</span>
+    <span>💬 181</span>
+    <span>🔥 1327.2</span>
+    <a href="https://www.producthunt.com/r/3IPLBPLEC7J35W?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">saas</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">12</span>
+  <div class="name">Honen</div>
+  <div class="tagline">Automated teaching + learning infrastructure for any company</div>
+  <div class="desc">Honen 为任何公司提供自动化教学和学习基础设施。几秒内将团队知识转化为互动的 AI 课程，包含自适应课程、模拟和学习者洞察。当文档、工具或流程变更时，课程自动更新。</div>
+  <div class="meta">
+    <span>👍 596</span>
+    <span>💬 119</span>
+    <span>🔥 1221.2</span>
+    <a href="https://www.producthunt.com/r/KGWER5KAKVLXHX?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">education</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">13</span>
+  <div class="name">Glaze by Raycast</div>
+  <div class="tagline">Create your own Mac apps by chatting with AI</div>
+  <div class="desc">Glaze 是从想法到 Mac 应用最简单的方式。描述你想要什么，它就能构建一个真正的应用——驻留在程序坞中、即时启动、离线可用、发挥计算机全部能力。来自 Raycast 制造商。</div>
+  <div class="meta">
+    <span>👍 595</span>
+    <span>💬 99</span>
+    <span>🔥 1164.8</span>
+    <a href="https://www.producthunt.com/r/5O23FOO5ATZ5QC?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">mac</span><span class="tag">productivity</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">14</span>
+  <div class="name">Asmi AI</div>
+  <div class="tagline">AI that handles your personal chores in the real world</div>
+  <div class="desc">Asmi AI 每天早上打电话给你。你说话，它处理一天的事务。它打电话给服务商（牙医、理发师、水管工、银行、保险）或人（朋友、同事）来协调、预约或解决问题。完成后通过 iMessage 或 WhatsApp 更新你。</div>
+  <div class="meta">
+    <span>👍 492</span>
+    <span>💬 146</span>
+    <span>🔥 1139.5</span>
+    <a href="https://www.producthunt.com/r/Y5YVSLCZJ7BZ6I?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">task-management</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">15</span>
+  <div class="name">Oxlo.ai</div>
+  <div class="tagline">Scale across AI models without scaling your bill</div>
+  <div class="desc">Oxlo.ai 让你在不增加账单的情况下跨 AI 模型扩展。通过单一 API 访问 35+ 个前沿模型，包括 DeepSeek V4 Pro、Kimi K2.6、GLM 5、Qwen、Llama 和 Mistral。比较模型、校准响应、为每个用例选择合适模型。</div>
+  <div class="meta">
+    <span>👍 534</span>
+    <span>💬 118</span>
+    <span>🔥 1125.5</span>
+    <a href="https://www.producthunt.com/r/DUYNVE7KZKA72Z?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">api-1</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">16</span>
+  <div class="name">Invoko</div>
+  <div class="tagline">A little hand on your Mac</div>
+  <div class="desc">Invoko 是你在 Mac 上的 AI 桌面助手，工作时可以跟它对话。把它带到屏幕任何内容旁边提问，或让它跨应用处理任务。</div>
+  <div class="meta">
+    <span>👍 528</span>
+    <span>💬 103</span>
+    <span>🔥 1075.2</span>
+    <a href="https://www.producthunt.com/r/CKKHYA5Y262PSX?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">mac</span><span class="tag">productivity</span><span class="tag">artificial-intelligence</span><span class="tag">vercel-day</span></div>
+</article>
+<article class="product">
+  <span class="rank">17</span>
+  <div class="name">Agent Mode by Receiptor AI</div>
+  <div class="tagline">Bookkeeping assistant that runs receipt workflows end-to-end</div>
+  <div class="desc">Receiptor AI 是智能体记账助手，端到端运行收据工作流：从收件箱和手机收集收据，整理到云端或会计软件，与银行交易匹配。后台静默运行，准确率 99%。</div>
+  <div class="meta">
+    <span>👍 524</span>
+    <span>💬 99</span>
+    <span>🔥 1058.2</span>
+    <a href="https://www.producthunt.com/r/DVSAWE2SN72E2P?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">fintech</span><span class="tag">artificial-intelligence</span><span class="tag">accounting</span></div>
+</article>
+<article class="product">
+  <span class="rank">18</span>
+  <div class="name">Cursor for iOS</div>
+  <div class="tagline">Build with coding agents from anywhere</div>
+  <div class="desc">Cursor 现已作为原生 iOS 应用公测，随时随地构建。开发者不再受限于本地机器。通过 Cursor for iOS 可以在云中启动永在线的智能体。</div>
+  <div class="meta">
+    <span>👍 590</span>
+    <span>💬 62</span>
+    <span>🔥 1055.5</span>
+    <a href="https://www.producthunt.com/r/KBJ3E75U6E6GTF?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">artificial-intelligence</span><span class="tag">development</span><span class="tag">vibe-coding</span></div>
+</article>
+<article class="product">
+  <span class="rank">19</span>
+  <div class="name">Framer 3.0</div>
+  <div class="tagline">With Agents, Branching, Community, and an all-new design</div>
+  <div class="desc">Framer 3.0 将 AI 带到画布上，帮助你设计、写作、分析和整理网站。同时推出 Branching——团队上线前探索创意的新方式，以及全新的 Framer 社区，创作者可以在这里分享和获利。</div>
+  <div class="meta">
+    <span>👍 625</span>
+    <span>💬 28</span>
+    <span>🔥 1014.5</span>
+    <a href="https://www.producthunt.com/r/64HL7FCICRJ4CQ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">design-tools</span><span class="tag">website-builder</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">20</span>
+  <div class="name">VC Boom</div>
+  <div class="tagline">Score your deck, meet investors who fit, and raise more</div>
+  <div class="desc">VC Boom 在 90 秒内为你的路演打分并指出最快修复方案，从 47,000+ 投资者中匹配适合你的人（每人附匹配理由），然后起草个性化冷邮件。准备投资者资料，然后预约会议。</div>
+  <div class="meta">
+    <span>👍 543</span>
+    <span>💬 70</span>
+    <span>🔥 1007.0</span>
+    <a href="https://www.producthunt.com/r/NEBXF32UWM4O4P?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">venture-capital</span><span class="tag">artificial-intelligence</span><span class="tag">fundraising</span></div>
+</article>
+<article class="product">
+  <span class="rank">21</span>
+  <div class="name">Zaro</div>
+  <div class="tagline">Build agents & apps on top of your context with one prompt.</div>
+  <div class="desc">Zaro 让你从散乱的工作中构建可用软件。你知道的一切分散在 Gmail、Slack、笔记和标签页中——Zaro 把它们集中到一个地方，让你几分钟内从中构建应用：你的研究、副业、计划、决策。</div>
+  <div class="meta">
+    <span>👍 475</span>
+    <span>💬 98</span>
+    <span>🔥 982.0</span>
+    <a href="https://www.producthunt.com/r/KBOJHU4IKBULO7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">artificial-intelligence</span><span class="tag">no-code</span></div>
+</article>
+<article class="product">
+  <span class="rank">22</span>
+  <div class="name">Browse.sh</div>
+  <div class="tagline">Give your agents muscle memory for automating the web</div>
+  <div class="desc">browse.sh 是一个开放的浏览器自动化技能目录，适用于任何网站。找到可复用的 SKILL.md 配方，教 AI 智能体在线完成任务，通过 browse CLI 安装。</div>
+  <div class="meta">
+    <span>👍 511</span>
+    <span>💬 51</span>
+    <span>🔥 906.8</span>
+    <a href="https://www.producthunt.com/r/INE5ILTLAZIF32?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">api-1</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">23</span>
+  <div class="name">discode.ai</div>
+  <div class="tagline">100+ AI models, one interface. ECO friendly.</div>
+  <div class="desc">discode 是你的 EU 友好 AI 路由器：一个界面访问 100+ 模型，每个提示自动路由到最佳模型。可沿智能、速度、环保维度微调。设备端删除个人数据，显示哪个模型回答了及原因。</div>
+  <div class="meta">
+    <span>👍 405</span>
+    <span>💬 99</span>
+    <span>🔥 879.8</span>
+    <a href="https://www.producthunt.com/r/FBBEAOCYJDEVTT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">saas</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">24</span>
+  <div class="name">Terminal Mode by Even Realities</div>
+  <div class="tagline">Keep coding agents always in sight</div>
+  <div class="desc">Terminal Mode by Even Realities 在 Even G2 智能眼镜上解锁环境终端。当编码智能体卡住时，你能看到哪个智能体需要你、给出方向、批准关键步骤。</div>
+  <div class="meta">
+    <span>👍 406</span>
+    <span>💬 93</span>
+    <span>🔥 864.8</span>
+    <a href="https://www.producthunt.com/r/JP725UN73VRUJN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">developer-tools</span><span class="tag">vibe-coding</span></div>
+</article>
+<article class="product">
+  <span class="rank">25</span>
+  <div class="name">Vida</div>
+  <div class="tagline">Clone yourself. Let AI do the work before you ask</div>
+  <div class="desc">Vida 是一个学习你工作方式、记住重要事情、随着时间越来越像你的 AI。用得越多，它越理解你的习惯、项目和做事方式。最终它像第二个你——安静地处理重复工作。</div>
+  <div class="meta">
+    <span>👍 424</span>
+    <span>💬 81</span>
+    <span>🔥 858.8</span>
+    <a href="https://www.producthunt.com/r/NK4KBFW256NNE2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">26</span>
+  <div class="name">TypingMind</div>
+  <div class="tagline">Pay per use, no subscription, 18 model providers supported</div>
+  <div class="desc">TypingMind 是最受欢迎的 LLM API 密钥应用。在同一个强大的 AI 工作空间中访问 18 家提供商的顶级模型，无需为每个模型付费订阅。面向专业用户的功能聚焦。</div>
+  <div class="meta">
+    <span>👍 488</span>
+    <span>💬 46</span>
+    <span>🔥 858.5</span>
+    <a href="https://www.producthunt.com/r/AET65KN4Y36CK3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">27</span>
+  <div class="name">MakersClaw</div>
+  <div class="tagline">Hire AI employees that live in your Slack, Teams, Telegram</div>
+  <div class="desc">MakersClaw 让你雇佣住在 Slack、Teams 或 Telegram 中的 AI 员工。24/7 运行在独立容器中，拥有独立记忆。一键部署，预置支持、销售、研究、SEO 等场景。按工具调用付费。</div>
+  <div class="meta">
+    <span>👍 450</span>
+    <span>💬 61</span>
+    <span>🔥 842.8</span>
+    <a href="https://www.producthunt.com/r/7T4D2IUJO2CB3U?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">saas</span><span class="tag">artificial-intelligence</span><span class="tag">bots</span><span class="tag">vercel-day</span></div>
+</article>
+<article class="product">
+  <span class="rank">28</span>
+  <div class="name">Cotypist</div>
+  <div class="tagline">Local AI Autocomplete in your voice, anywhere on your Mac</div>
+  <div class="desc">Cotypist 是你已在使用的 Mac 应用（Mail、Slack、笔记、文档、甚至 AI 提示）中的智能自动补全。按 Tab 接受建议，或继续打字看实时更新。本地运行，无需云端或 API 调用。</div>
+  <div class="meta">
+    <span>👍 406</span>
+    <span>💬 82</span>
+    <span>🔥 834.5</span>
+    <a href="https://www.producthunt.com/r/DAOKZ2ZPDUPEKT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">writing</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">29</span>
+  <div class="name">Claude Code Artifacts</div>
+  <div class="tagline">Preview and share your coding work live as it happens</div>
+  <div class="desc">Claude Code Artifacts 让你将进行中的编码工作预览为实时交互式产物——基于完整会话上下文构建，可与团队分享。</div>
+  <div class="meta">
+    <span>👍 506</span>
+    <span>💬 16</span>
+    <span>🔥 803.0</span>
+    <a href="https://www.producthunt.com/r/ZKUSXUIDPQQBDF?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">software-engineering</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">30</span>
+  <div class="name">Vercel Drop</div>
+  <div class="tagline">Drop it. It's live.</div>
+  <div class="desc">Vercel Drop 让你通过拖拽部署文件或文件夹。不需要 Git、Vercel CLI 或本地设置。将项目拖到 vercel.com/drop，选择团队和项目名称，点击部署。</div>
+  <div class="meta">
+    <span>👍 473</span>
+    <span>💬 18</span>
+    <span>🔥 759.0</span>
+    <a href="https://www.producthunt.com/r/RY26DNHYWZFE45?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">developer-tools</span></div>
+</article>
+</main>
+<footer>
+  <p>数据来源 <a href="https://www.producthunt.com" target="_blank" rel="noopener" style="color:var(--ph);">Product Hunt</a> · 由 GitHub Actions 每日自动更新</p>
+</footer>
+</body>
+</html>
