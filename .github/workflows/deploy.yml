@@ -3,12 +3,10 @@ name: Fetch & Deploy
 on:
   schedule:
     - cron: '0 9 * * *'  # Daily at 09:00 UTC
-  workflow_dispatch:  # Allow manual trigger
+  workflow_dispatch:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   build-and-deploy:
@@ -20,29 +18,26 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install deps
+        run: pip install pyyaml
+
       - name: Fetch data
         env:
           PH_TOKEN: ${{ secrets.PH_TOKEN }}
         run: |
-          # Create config from secret
           cp config/settings.example.yml config/settings.yml
-          # Inject token
           sed -i "s/YOUR_TOKEN_HERE/$PH_TOKEN/" config/settings.yml
           python main.py fetch
 
       - name: Generate static page
         run: python src/gen_static.py data/producthunt.db public/index.html
 
-      - name: Add CNAME (optional)
-        run: |
-          # Uncomment below if using custom domain
-          # echo 'yourdomain.com' > public/CNAME
-          touch public/.nojekyll
+      - name: Prepare public dir
+        run: touch public/.nojekyll
 
-      - name: Deploy to GitHub Pages
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: public
-
-      - name: Deploy
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
