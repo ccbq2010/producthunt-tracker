@@ -12,9 +12,9 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -30,14 +30,18 @@ jobs:
           python main.py fetch
 
       - name: Generate static page
-        run: python src/gen_static.py data/producthunt.db public/index.html
+        run: |
+          python src/gen_static.py data/producthunt.db public/index.html
+          touch public/.nojekyll
 
-      - name: Prepare public dir
-        run: touch public/.nojekyll
-
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages
+      - name: Push to gh-pages
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git checkout --orphan gh-pages_tmp
+          git rm -rf . > /dev/null 2>&1
+          cp -r public/* .
+          git add .
+          git commit -m "deploy: ${{ github.sha }}"
+          git branch -M gh-pages
+          git push origin gh-pages --force --quiet
