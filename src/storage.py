@@ -27,6 +27,7 @@ class Storage:
                 votes_count_ongoing INTEGER DEFAULT 0,
                 comments_count_ongoing INTEGER DEFAULT 0,
                 created_at TEXT,
+                description_zh TEXT DEFAULT '',
                 author TEXT DEFAULT '',
                 topics TEXT DEFAULT '[]',
                 first_seen_at TEXT NOT NULL,

@@ -48,6 +48,7 @@ def generate(db_path: str) -> str:
             0.5 * (d.get("vote_delta", 0) + d.get("comment_delta", 0) * 1.5), 1
         )
         # Use Chinese description if available, fallback to English
+        # Use Chinese description if available, fallback to English
         d["desc"] = (d.get("description_zh") or d.get("description") or "").strip()
         if len(d["desc"]) > 350:
             d["desc"] = d["desc"][:347] + "..."
