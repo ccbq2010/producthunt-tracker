@@ -36,11 +36,12 @@ jobs:
 
       - name: Push to gh-pages
         run: |
+          cp -r public /tmp/public_deploy
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git checkout --orphan gh-pages_tmp
           git rm -rf . > /dev/null 2>&1
-          cp -r public/* .
+          cp -r /tmp/public_deploy/* .
           git add .
           git commit -m "deploy: ${{ github.sha }}"
           git branch -M gh-pages
