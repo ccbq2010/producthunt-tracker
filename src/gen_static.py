@@ -42,7 +42,10 @@ def generate(db_path: str) -> str:
     products = []
     for r in rows:
         d = dict(r)
-        d["topics"] = json.loads(d.get("topics", "[]"))
+        try:
+            d["topics"] = json.loads(d.get("topics") or "[]")
+        except (json.JSONDecodeError, TypeError):
+            d["topics"] = []
         d["score"] = round(
             (d["votes"] + d["comments"] * 2) +
             0.5 * (d.get("vote_delta", 0) + d.get("comment_delta", 0) * 1.5), 1

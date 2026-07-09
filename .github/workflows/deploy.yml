@@ -31,8 +31,21 @@ jobs:
 
       - name: Generate static page
         run: |
-          python src/gen_static.py data/producthunt.db public/index.html
+          python -u src/gen_static.py data/producthunt.db public/index.html 2>&1 || {
+            echo "=== gen_static.py FAILED ==="
+            python -c "
+            import sqlite3
+            con = sqlite3.connect('data/producthunt.db')
+            cur = con.cursor()
+            print('posts:', cur.execute('select count(*) from posts').fetchone()[0])
+            rows = cur.execute(\"SELECT id, name FROM posts WHERE topics IS NULL OR (topics NOT LIKE '[%' AND topics NOT LIKE '%null%')\").fetchall()
+            print('suspect rows:', rows)
+            con.close()
+            "
+            exit 1
+          }
           touch public/.nojekyll
+          ls -lah public/
 
       - name: Push to gh-pages
         run: |
