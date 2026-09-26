@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Hunt 每日趋势</title>
+<meta name="description" content="Product Hunt 热门产品每日追踪">
+<style>
+:root { --ph: #da552f; --bg: #fafafa; --card: #fff; --text: #333; --muted: #888; --border: #eee; --rank-bg: #da552f; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+header { background: linear-gradient(135deg, #da552f 0%, #b8441f 100%); color: #fff; padding: 28px 24px; text-align: center; }
+header h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+header p { font-size: 14px; opacity: 0.85; }
+.container { max-width: 800px; margin: 0 auto; padding: 20px 16px; }
+.product { background: var(--card); border-radius: 12px; padding: 18px; margin-bottom: 14px; border: 1px solid var(--border); transition: box-shadow 0.2s; }
+.product:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+.product .rank { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; line-height: 1; background: var(--rank-bg); color: #fff; border-radius: 50%; font-size: 12px; font-weight: 700; margin-right: 10px; vertical-align: middle; }
+.product .name { font-weight: 600; font-size: 16px; vertical-align: middle; }
+.product .tagline { color: var(--muted); font-size: 13px; margin: 6px 0 8px 36px; }
+.product .desc { color: #555; font-size: 13px; line-height: 1.8; margin: 0 0 10px 0; }
+.product .meta { font-size: 12px; color: var(--muted); }
+.product .meta span { margin-right: 14px; }
+.product .tags { margin-top: 6px; }
+.product a { color: var(--ph); text-decoration: none; font-size: 12px; font-weight: 500; }
+.product a:hover { text-decoration: underline; }
+.tag { display: inline-block; background: #f0f0f0; padding: 2px 8px; border-radius: 8px; font-size: 11px; margin-right: 4px; color: #666; }
+.empty { text-align: center; padding: 60px 20px; color: var(--muted); }
+footer { text-align: center; padding: 24px 20px; color: var(--muted); font-size: 12px; }
+@media (max-width: 480px) {
+  header h1 { font-size: 20px; }
+  .product { padding: 14px; }
+  .product .tagline, .product .desc { margin-left: 0; margin-top: 8px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Product Hunt · 每日趋势</h1>
+  <p>热门产品追踪 · 更新于 2026-09-26 13:35 UTC</p>
+</header>
+<main class="container">
+
+<article class="product">
+  <span class="rank">1</span>
+  <div class="name">Ami AI</div>
+  <div class="tagline">Lovable for getting customers</div>
+  <div class="desc">Most outbound dies on one decision: who to write to this week. Ami has already made it 17,707 times and kept score. Built on GPT-6 Astra and every one of those campaigns, it reads your website, picks the buyers who actually convert, and plans backwards from the number you need: leads, senders, weeks. If the list you asked for won't work, it says...</div>
+  <div class="meta">
+    <span>👍 634</span>
+    <span>💬 211</span>
+    <span>🔥 1531.2</span>
+    <a href="https://www.producthunt.com/r/IABJ4YWI3SSSWZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">sales</span><span class="tag">marketing</span><span class="tag">artificial-intelligence</span><span class="tag">openai-day</span></div>
+</article>
+<article class="product">
+  <span class="rank">2</span>
+  <div class="name">AINA</div>
+  <div class="tagline">Find your job search blind spots with an AI coach</div>
+  <div class="desc">AINA is an AI career coach that helps you see what's holding your job search back, strengthen your profile, and practice for interviews — through conversations with a video avatar. Talk to AINA and walk away with a personalized action plan for whatever's next in your career.</div>
+  <div class="meta">
+    <span>👍 499</span>
+    <span>💬 196</span>
+    <span>🔥 1287.5</span>
+    <a href="https://www.producthunt.com/r/DPLNID7SCPBE2B?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">artificial-intelligence</span><span class="tag">career</span><span class="tag">openai-day</span></div>
+</article>
+<article class="product">
+  <span class="rank">3</span>
+  <div class="name">Clueso MCP</div>
+  <div class="tagline">Create and edit videos by chatting</div>
+  <div class="desc">Make videos with Claude, ChatGPT, or any AI agent. Give Clueso an idea, deck, reference video, or recording, and it handles the whole video production: storyboard, scenes, voiceover, music, and editing, on-brand. Everything stays editable, by hand or by chat.</div>
+  <div class="meta">
+    <span>👍 543</span>
+    <span>💬 161</span>
+    <span>🔥 1257.2</span>
+    <a href="https://www.producthunt.com/r/CFUV35KT4ZLPZO?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">artificial-intelligence</span><span class="tag">animation</span><span class="tag">video</span></div>
+</article>
+<article class="product">
+  <span class="rank">4</span>
+  <div class="name">Mastra Factory</div>
+  <div class="tagline">From issue to production, run by agents.</div>
+  <div class="desc">Mastra Factory is an open source, agent-powered software delivery environment. It combines persistent coding agents, repository workspaces, issue intake, planning, implementation, and pull request review in a web application you control.</div>
+  <div class="meta">
+    <span>👍 574</span>
+    <span>💬 131</span>
+    <span>🔥 1221.2</span>
+    <a href="https://www.producthunt.com/r/52CAOAGHS62ZQY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">open-source</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span><span class="tag">github</span></div>
+</article>
+<article class="product">
+  <span class="rank">5</span>
+  <div class="name">Voiskey</div>
+  <div class="tagline">AI voice typing that sounds right in every app</div>
+  <div class="desc">Voiskey starts from what you meant, not just what you said. Speak a rough thought and it comes back shaped for where it's going and who's reading it: casual with a friend, composed with a colleague, technical with an AI. It arrives 5x faster than typing, cleaned up and ready to send, while you still sound like you. Voiskey is now available on iO...</div>
+  <div class="meta">
+    <span>👍 540</span>
+    <span>💬 146</span>
+    <span>🔥 1211.5</span>
+    <a href="https://www.producthunt.com/r/QOEFADHWXGZN5X?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">artificial-intelligence</span><span class="tag">audio</span></div>
+</article>
+<article class="product">
+  <span class="rank">6</span>
+  <div class="name">tiun.</div>
+  <div class="tagline">Auth, billing, and payments for AI builders</div>
+  <div class="desc">One system for auth, payments, customer data, and analytics. One command to install. Launch a paid product the same day you start building.</div>
+  <div class="meta">
+    <span>👍 610</span>
+    <span>💬 102</span>
+    <span>🔥 1195.5</span>
+    <a href="https://www.producthunt.com/r/TDDTPREQN2HR4H?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">payments</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">7</span>
+  <div class="name">Superset Mobile</div>
+  <div class="tagline">Your coding agents, now in your pocket</div>
+  <div class="desc">Orchestrate coding agents from your iPhone. Pick up the same workspaces from your computer, review diffs, and merge PRs away from your desk. Works with Claude Code, Codex, and other terminal agents. Included with Superset Pro. First month free with code MOBILELAUNCH.</div>
+  <div class="meta">
+    <span>👍 503</span>
+    <span>💬 133</span>
+    <span>🔥 1120.2</span>
+    <a href="https://www.producthunt.com/r/WKWWYZ4NNBTCM7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">ios</span><span class="tag">artificial-intelligence</span><span class="tag">development</span></div>
+</article>
+<article class="product">
+  <span class="rank">8</span>
+  <div class="name">Switch</div>
+  <div class="tagline">Bring any AI agent into Slack, Teams & Discord</div>
+  <div class="desc">Switch brings AI agents into the collaboration tools your team already uses. Agents join as named participants in your Slack, Teams, Discord, or Telegram channels, sharing the same context and history as your team. Connect an agent once and use it across projects. Each room carries its own context, participants, and rules. Works with Claude Code...</div>
+  <div class="meta">
+    <span>👍 545</span>
+    <span>💬 95</span>
+    <span>🔥 1078.8</span>
+    <a href="https://www.producthunt.com/r/EAQYN6B2W3MDVB?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">open-source</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">9</span>
+  <div class="name">Widgo</div>
+  <div class="tagline">AI Sales rep for your website visitors</div>
+  <div class="desc">Widgo is an AI sales rep on your website. It scans your site, adds any docs you give it, and answers every visitor from that alone. It identifies the company, scores the lead, and books the demo on your calendar. One line of code. Free forever, no card.</div>
+  <div class="meta">
+    <span>👍 450</span>
+    <span>💬 136</span>
+    <span>🔥 1049.0</span>
+    <a href="https://www.producthunt.com/r/KKQZVPBNVHRLPI?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">sales</span><span class="tag">saas</span><span class="tag">tech</span></div>
+</article>
+<article class="product">
+  <span class="rank">10</span>
+  <div class="name">Skydive</div>
+  <div class="tagline">Build cloud agents that work across your tools</div>
+  <div class="desc">Build cloud agent coworkers that take on real, multi-step work across the tools you already use. Describe the outcome you want, and Skydive creates a working agent in minutes. No code, no prompt engineering, no workflow wiring required. Skydive agents live in your stack, execute repeatable work, and get sharper over time.</div>
+  <div class="meta">
+    <span>👍 439</span>
+    <span>💬 120</span>
+    <span>🔥 988.5</span>
+    <a href="https://www.producthunt.com/r/YLZ2MF3E6WGU67?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">11</span>
+  <div class="name">MosMos</div>
+  <div class="tagline">Voice writing that works before, during, and after meetings</div>
+  <div class="desc">MosMos goes beyond voice dictation by turning both individual thoughts and group conversations into usable writing. Speak naturally in any app, get fast and accurate text in the style you choose, or ask MosMos to search the web for current information. Its personal glossary remembers specialized terms after you add them once. In multi-speaker me...</div>
+  <div class="meta">
+    <span>👍 409</span>
+    <span>💬 122</span>
+    <span>🔥 949.0</span>
+    <a href="https://www.producthunt.com/r/2WNX7F5ABJ77RC?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">writing</span><span class="tag">artificial-intelligence</span><span class="tag">audio</span></div>
+</article>
+<article class="product">
+  <span class="rank">12</span>
+  <div class="name">Loqua</div>
+  <div class="tagline">Speak naturally and move from thoughts to being done</div>
+  <div class="desc">Your thoughts shouldn’t have to slow down for a keyboard. With Loqua, you can speak naturally to turn rough ideas into ready-to-use writing, understand what’s on your screen, listen when you’d rather not read, and move work forward by voice - from rewriting and translation to scheduling and coding workflows. Less typing, less context switching, ...</div>
+  <div class="meta">
+    <span>👍 410</span>
+    <span>💬 118</span>
+    <span>🔥 939.5</span>
+    <a href="https://www.producthunt.com/r/TI22A4U5XM3DVC?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">artificial-intelligence</span><span class="tag">audio</span></div>
+</article>
+<article class="product">
+  <span class="rank">13</span>
+  <div class="name">Harden</div>
+  <div class="tagline">A security layer for AI coding agents</div>
+  <div class="desc">Harden AIF is a free, local security tool for AI coding agents. Its post-trained model checks tool calls before they run, using your request and session context. It beat frontier models on key agent-security benchmarks, while keeping your repo and tool output on your machine.</div>
+  <div class="meta">
+    <span>👍 420</span>
+    <span>💬 111</span>
+    <span>🔥 935.2</span>
+    <a href="https://www.producthunt.com/r/PV2MJET6ZGFMKD?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span><span class="tag">security</span></div>
+</article>
+<article class="product">
+  <span class="rank">14</span>
+  <div class="name">Sider Omni Sidebar</div>
+  <div class="tagline">Give every Mac app an Agent Sidebar</div>
+  <div class="desc">An AI agent beside any Mac app. Sider Omni sidebar sees what's on your screen and acts on it directly, right where you're working. Watch the result, ask for the next change. Nothing to copy, nothing to upload. Built on GPT-6 Astra, and it can run on your existing ChatGPT or Codex credits.</div>
+  <div class="meta">
+    <span>👍 373</span>
+    <span>💬 132</span>
+    <span>🔥 922.5</span>
+    <a href="https://www.producthunt.com/r/GXEZU22QAYGGP5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">mac</span><span class="tag">productivity</span><span class="tag">artificial-intelligence</span><span class="tag">openai-day</span></div>
+</article>
+<article class="product">
+  <span class="rank">15</span>
+  <div class="name">Monid</div>
+  <div class="tagline">OpenRouter for agent tools</div>
+  <div class="desc">We connect your AI agent to 1,800+ APIs without any subscriptions. SEO, lead gen, video/music generation, social media, stocks, market trends, on-chain data, competitor tracking, sentiment analysis, all unlocked with one key.</div>
+  <div class="meta">
+    <span>👍 499</span>
+    <span>💬 57</span>
+    <span>🔥 905.2</span>
+    <a href="https://www.producthunt.com/r/BF4YYRJGDZZ236?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">api-1</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">16</span>
+  <div class="name">Naise AI</div>
+  <div class="tagline">Autonomous marketing agents that actually execute</div>
+  <div class="desc">Stop babysitting AI's empty text boxes. Naise AI gives founders and lean teams the output of a full marketing department without the overhead. Lock in your brand guidelines with Persistent Memory, select an Prompt Playbook, and let the platform handle the execution. From vetting real influencers and pitching to journalists, to generating and sch...</div>
+  <div class="meta">
+    <span>👍 415</span>
+    <span>💬 90</span>
+    <span>🔥 870.0</span>
+    <a href="https://www.producthunt.com/r/I323VH3KBIWT3P?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">social-media</span><span class="tag">marketing</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">17</span>
+  <div class="name">GPT-6 Astra</div>
+  <div class="tagline">OpenAI's most capable model for end-to-end work</div>
+  <div class="desc">GPT-6 Astra is OpenAI's most capable model for complex reasoning, software engineering, computer use, science, and professional work. Async tool calling and mid-turn steering help it run multistep agent workflows. API: model id gpt-6-astra, $10/$50 per 1M tokens (short context). Rolling out first via Trusted Access/Daybreak, then Plus, Pro, Busi...</div>
+  <div class="meta">
+    <span>👍 529</span>
+    <span>💬 20</span>
+    <span>🔥 848.5</span>
+    <a href="https://www.producthunt.com/r/JZWSD2RN4SUNT2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">18</span>
+  <div class="name">Jev</div>
+  <div class="tagline">Fast, structured AI decisions for software automation</div>
+  <div class="desc">Jev is TypeSafe AI's System One frontier model: unstructured state in, typed probabilistic decisions out. Instead of generating text, Jev returns Choice, Score, and Noul answers with calibrated probabilities your code can act on. Parallel sampling delivers ~70-500ms responses, about 20-200x faster and 40-400x cheaper than comparable LLM workflow...</div>
+  <div class="meta">
+    <span>👍 538</span>
+    <span>💬 15</span>
+    <span>🔥 848.2</span>
+    <a href="https://www.producthunt.com/r/XJ7UD64LPY5QDA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">api-1</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">19</span>
+  <div class="name">AI Toolbox 3.0</div>
+  <div class="tagline">Search, organize and export every AI chat in one place</div>
+  <div class="desc">AI Toolbox is the missing layer on top of ChatGPT, Claude, Gemini and Grok: folders and subfolders, full-text search across every conversation (even all four platforms at once), a prompt library with // insert and multi-step chains, bulk export to Markdown/PDF/JSON, bookmarks, and a live context meter. One install covers all four AIs. Local-firs...</div>
+  <div class="meta">
+    <span>👍 443</span>
+    <span>💬 58</span>
+    <span>🔥 824.0</span>
+    <a href="https://www.producthunt.com/r/FBV7SHB3HECJ55?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">chrome-extensions</span><span class="tag">productivity</span><span class="tag">artificial-intelligence</span><span class="tag">youtube</span></div>
+</article>
+<article class="product">
+  <span class="rank">20</span>
+  <div class="name">Solid</div>
+  <div class="tagline">Agents with their own computers, accounts, and budgets.</div>
+  <div class="desc">Solid’s AI agents build apps, automate workflows and tackle work you lack the time or expertise for. They pick and set up their own real machines, create accounts and pay for services. They use your apps through APIs or log in like a person. They build what’s missing and fix problems along the way. Think beyond personal agents like Grok Bot and ...</div>
+  <div class="meta">
+    <span>👍 461</span>
+    <span>💬 47</span>
+    <span>🔥 820.8</span>
+    <a href="https://www.producthunt.com/r/IGFJIPCFXEAE6A?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">artificial-intelligence</span><span class="tag">development</span></div>
+</article>
+<article class="product">
+  <span class="rank">21</span>
+  <div class="name">Scholé Learn by Building</div>
+  <div class="tagline">Learning should be more than "click next"</div>
+  <div class="desc">Learn by building, on any website, with Scholé by your side. You can read about a tool, watch someone walk through it on YouTube, or ask ChatGPT to explain it. But you won’t properly learn until you build with it yourself. Learn Anywhere mode guides you through using any real tool directly on your screen, adapting tasks and giving visual hints. ...</div>
+  <div class="meta">
+    <span>👍 406</span>
+    <span>💬 76</span>
+    <span>🔥 818.0</span>
+    <a href="https://www.producthunt.com/r/F22BXESSBPZXG7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">education</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">22</span>
+  <div class="name">Sai</div>
+  <div class="tagline">The autonomous computer fleet at your command</div>
+  <div class="desc">Sai is the world's first robosecretary that works with a fleet of autonomous computers, doing your endless screen work. Each computer navigates software the way you do: reads the screen, clicks the button, types in the form. Trained to interact with the computer interface, Sai automates software even when they lack APIs: legacy desktop apps, int...</div>
+  <div class="meta">
+    <span>👍 419</span>
+    <span>💬 48</span>
+    <span>🔥 760.5</span>
+    <a href="https://www.producthunt.com/r/EXXMVNBYWQYZ32?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">23</span>
+  <div class="name">Articos</div>
+  <div class="tagline">Launch with confidence, not gut instinct</div>
+  <div class="desc">Articos helps SaaS teams, agencies, and founders test messaging, positioning, and landing pages against simulated personas matched to your ICP. Real audience signal in under 30 minutes. Peer-reviewed at 86% human accuracy vs Baymard and Nielsen Norman.</div>
+  <div class="meta">
+    <span>👍 407</span>
+    <span>💬 53</span>
+    <span>🔥 756.2</span>
+    <a href="https://www.producthunt.com/r/SV57AXQTEEXIBS?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">marketing</span><span class="tag">saas</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">24</span>
+  <div class="name">PageIndex</div>
+  <div class="tagline">Accurate, trustworthy answers across professional documents</div>
+  <div class="desc">PageIndex gives you accurate, trustworthy answers across long, professional documents your work depends on. Bring in your entire document set, ask your hardest question, and click any citation to jump to the exact highlighted source line, so you can verify it in seconds.</div>
+  <div class="meta">
+    <span>👍 377</span>
+    <span>💬 49</span>
+    <span>🔥 700.2</span>
+    <a href="https://www.producthunt.com/r/XN6ZYWE35L5YMT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">25</span>
+  <div class="name">Topview Motion Studio</div>
+  <div class="tagline">Create launch videos without touching After Effects</div>
+  <div class="desc">Motion Studio helps teams create polished launch videos for apps, hardware, and new products without learning After Effects or hiring a motion design studio. Describe what you want to communicate, upload reference images, and choose a visual style, duration, and aspect ratio. Motion Studio combines AI video models with purpose-built motion desig...</div>
+  <div class="meta">
+    <span>👍 340</span>
+    <span>💬 64</span>
+    <span>🔥 686.0</span>
+    <a href="https://www.producthunt.com/r/25TEFO4TYMRPSG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">design-tools</span><span class="tag">productivity</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">26</span>
+  <div class="name">Typewise Nova</div>
+  <div class="tagline">AI customer experience that builds and improves itself</div>
+  <div class="desc">Nova is the AI Operator that builds and improves your AI customer experience team, no developer required. Describe in plain language how customers should be handled and connect your tools. Nova builds the agents, tests them on past tickets and shows you what failed before anything goes live. Once running, it monitors quality and proposes fixes 2...</div>
+  <div class="meta">
+    <span>👍 351</span>
+    <span>💬 55</span>
+    <span>🔥 677.8</span>
+    <a href="https://www.producthunt.com/r/TCXETJND5MA53Q?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">customer-communication</span><span class="tag">saas</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">27</span>
+  <div class="name">WZRD</div>
+  <div class="tagline">AI-native documents, slides, forms and sheets that talk back</div>
+  <div class="desc">WZRD is for teams and creators working with documents, slides, forms and sheets. Upload existing work or create from a prompt, then turn it into an AI experience users can engage with. Forms collect answers by speaking or typing. Sheets explain numbers out loud. Slides walk people through the story. Documents engage every user. The output stays ...</div>
+  <div class="meta">
+    <span>👍 332</span>
+    <span>💬 59</span>
+    <span>🔥 660.2</span>
+    <a href="https://www.producthunt.com/r/6OKF7YXETYBRXV?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">no-code</span><span class="tag">design</span></div>
+</article>
+<article class="product">
+  <span class="rank">28</span>
+  <div class="name">Mycel</div>
+  <div class="tagline">Bring one past deliverable. Mycel drafts every future one.</div>
+  <div class="desc">Mycel runs the work your service business sells - clients, deliverables, approvals, invoices. Each job runs in a disposable sandbox that never holds a credential, and nothing reaches a client until you approve it. From $299/mo, or self-host free.</div>
+  <div class="meta">
+    <span>👍 338</span>
+    <span>💬 47</span>
+    <span>🔥 636.2</span>
+    <a href="https://www.producthunt.com/r/T2UPVH2TQW5Y2F?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">saas</span><span class="tag">artificial-intelligence</span><span class="tag">github</span></div>
+</article>
+<article class="product">
+  <span class="rank">29</span>
+  <div class="name">Nex</div>
+  <div class="tagline">Claude Cowork for high-volume GTM workflows</div>
+  <div class="desc">Nex automates workflows like CRM clean up, large list qualification, revenue recovery, at large volumes, that break general purpose agents. Built by ex-HubSpotters who ran its three largest customer platforms and backed by HubSpot founder Dharmesh Shah.</div>
+  <div class="meta">
+    <span>👍 361</span>
+    <span>💬 23</span>
+    <span>🔥 604.8</span>
+    <a href="https://www.producthunt.com/r/XMDJ7VCVJ2VC3D?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">sales</span><span class="tag">saas</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">30</span>
+  <div class="name">Raycast 2.0</div>
+  <div class="tagline">The next generation of Raycast is here</div>
+  <div class="desc">Raycast 2.0 is built on a new foundation, redesigned from the inside out. Your shortcut to everything now brings AI that can take action across your apps, Automations for recurring tasks, and Projects to keep ongoing work together. Connect your own ChatGPT or Claude account and put AI to work alongside the commands and extensions you use every d...</div>
+  <div class="meta">
+    <span>👍 341</span>
+    <span>💬 16</span>
+    <span>🔥 555.5</span>
+    <a href="https://www.producthunt.com/r/MLZTWKGQKD6OHY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">mac</span><span class="tag">productivity</span><span class="tag">developer-tools</span></div>
+</article>
+</main>
+<footer>
+  <p>数据来源 <a href="https://www.producthunt.com" target="_blank" rel="noopener" style="color:var(--ph);">Product Hunt</a> · 由 GitHub Actions 每日自动更新</p>
+</footer>
+</body>
+</html>
