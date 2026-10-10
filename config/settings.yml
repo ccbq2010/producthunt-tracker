@@ -1,0 +1,62 @@
+# Product Hunt API token
+# Get yours at: https://www.producthunt.com/v2/oauth/applications
+token: "bY0unCZLo6gYNpTH-_Zz196nM629lS0vlIZ4wPnmG8k"
+
+# Topics to track (Product Hunt topic slugs)
+topics:
+  - artificial-intelligence
+  - machine-learning
+  - ai-tools
+  - chatgpt
+  - devtools
+  - saas
+  - productivity
+
+# Fetch settings
+fetch:
+  max_items_per_topic: 20
+  timeout: 15
+
+# Database
+database:
+  path: "data/producthunt.db"
+
+# Report schedule
+report:
+  # "daily" or "weekly"
+  frequency: "daily"
+  # Hour of day to generate report (24h format, UTC)
+  hour: 9
+  # Day of week for weekly report (monday, tuesday, etc.)
+  day: "monday"
+
+# Notification channels
+notify:
+  # Email via SMTP
+  email:
+    enabled: false
+    smtp_host: "smtp.gmail.com"
+    smtp_port: 587
+    use_tls: true
+    username: ""
+    password: ""  # Use app password for Gmail
+    from_addr: ""
+    to_addrs:
+      - "your@email.com"
+  # Webhook (Slack, Discord, etc.)
+  webhook:
+    enabled: false
+    url: "https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
+  # Output to file
+  file:
+    enabled: true
+    path: "data/reports/"
+
+# Analysis settings
+analysis:
+  # Minimum votes to consider a product "trending"
+  min_votes: 50
+  # Number of top products to feature
+  top_n: 10
+  # Track categories for trend detection
+  category_tracking: true
