@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Hunt 每日趋势</title>
+<meta name="description" content="Product Hunt 热门产品每日追踪">
+<style>
+:root { --ph: #da552f; --bg: #fafafa; --card: #fff; --text: #333; --muted: #888; --border: #eee; --rank-bg: #da552f; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+header { background: linear-gradient(135deg, #da552f 0%, #b8441f 100%); color: #fff; padding: 28px 24px; text-align: center; }
+header h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+header p { font-size: 14px; opacity: 0.85; }
+.container { max-width: 800px; margin: 0 auto; padding: 20px 16px; }
+.product { background: var(--card); border-radius: 12px; padding: 18px; margin-bottom: 14px; border: 1px solid var(--border); transition: box-shadow 0.2s; }
+.product:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+.product .rank { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; line-height: 1; background: var(--rank-bg); color: #fff; border-radius: 50%; font-size: 12px; font-weight: 700; margin-right: 10px; vertical-align: middle; }
+.product .name { font-weight: 600; font-size: 16px; vertical-align: middle; }
+.product .tagline { color: var(--muted); font-size: 13px; margin: 6px 0 8px 36px; }
+.product .desc { color: #555; font-size: 13px; line-height: 1.8; margin: 0 0 10px 0; }
+.product .meta { font-size: 12px; color: var(--muted); }
+.product .meta span { margin-right: 14px; }
+.product .tags { margin-top: 6px; }
+.product a { color: var(--ph); text-decoration: none; font-size: 12px; font-weight: 500; }
+.product a:hover { text-decoration: underline; }
+.tag { display: inline-block; background: #f0f0f0; padding: 2px 8px; border-radius: 8px; font-size: 11px; margin-right: 4px; color: #666; }
+.empty { text-align: center; padding: 60px 20px; color: var(--muted); }
+footer { text-align: center; padding: 24px 20px; color: var(--muted); font-size: 12px; }
+@media (max-width: 480px) {
+  header h1 { font-size: 20px; }
+  .product { padding: 14px; }
+  .product .tagline, .product .desc { margin-left: 0; margin-top: 8px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Product Hunt · 每日趋势</h1>
+  <p>热门产品追踪 · 更新于 2026-11-27 18:39 UTC</p>
+</header>
+<main class="container">
+
+<article class="product">
+  <span class="rank">1</span>
+  <div class="name">Alsona</div>
+  <div class="tagline">AI agents that turn buying signals into booked sales calls</div>
+  <div class="desc">95% of prospects aren't ready to buy when you reach out. Alsona finds the ones showing buying intent right now. It tracks 32+ signals across hiring, funding, tech changes, reviews, ad spend, and more, then scores companies against your ICP and explains why they're worth contacting. AI agents turn those signals into personalized LinkedIn and emai...</div>
+  <div class="meta">
+    <span>👍 563</span>
+    <span>💬 132</span>
+    <span>🔥 1207.5</span>
+    <a href="https://www.producthunt.com/r/6777NBXG6GHZDS?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">sales</span><span class="tag">saas</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">2</span>
+  <div class="name">Teamily AI</div>
+  <div class="tagline">Your personal agent, agent teams & people in one messenger</div>
+  <div class="desc">The human-agent platform where people and always-on agents get work done together in one unified, context-aware space. Unlike single-user personal agents, Teamily AI enables multi-user, multi-agent teamwork. Built on an AI-native messenger, it connects people, agents, docs, meetings, calls, workflows, and business systems to automate office work...</div>
+  <div class="meta">
+    <span>👍 392</span>
+    <span>💬 185</span>
+    <span>🔥 1096.8</span>
+    <a href="https://www.producthunt.com/r/EKZU365TJG62XT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">artificial-intelligence</span><span class="tag">social-networking</span></div>
+</article>
+<article class="product">
+  <span class="rank">3</span>
+  <div class="name">Hub</div>
+  <div class="tagline">Run 100 Claude Code or Codex sessions like 5</div>
+  <div class="desc">Open-source dispatcher for Claude Code and Codex sessions. Write a goal in your browser or Telegram, a coordinator hands it to agents, and only the decisions come back. Self-hosted, Apache-2.0, on your own Claude or ChatGPT subscription. One-line install. Experimental: agents run without permission prompts.</div>
+  <div class="meta">
+    <span>👍 416</span>
+    <span>💬 167</span>
+    <span>🔥 1083.2</span>
+    <a href="https://www.producthunt.com/r/SKCIVKZDKR5QGT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">open-source</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">4</span>
+  <div class="name">Wanaka Studio</div>
+  <div class="tagline">Make and publish 3D games with the first AI game engine</div>
+  <div class="desc">The first all-in-one, AI-native game engine. An AI agent builds your AAA-style 3D game. You can edit it directly in a synced visual editor. No code. Auto-rigging, multiplayer, and 1-click publish built in. Uses ~80% fewer tokens and generates faster than Claude Opus 5.5 + Unity.</div>
+  <div class="meta">
+    <span>👍 501</span>
+    <span>💬 117</span>
+    <span>🔥 1073.2</span>
+    <a href="https://www.producthunt.com/r/72C3HN2ZVH7J6Z?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">artificial-intelligence</span><span class="tag">games</span><span class="tag">no-code</span></div>
+</article>
+<article class="product">
+  <span class="rank">5</span>
+  <div class="name">RankSpot</div>
+  <div class="tagline">Pay-as-you-go SEO and AI Search execution layer for agents</div>
+  <div class="desc">RankSpot is the SEO and AI Search execution layer for agents. Connect the MCP to Claude or ChatGPT in 2 minutes and your agent does the work: it writes articles from what already ranks on Google in 100+ languages, publishes them, and pitches ranking sites from your mailbox for backlinks. Run every client or business from one chat. No subscriptio...</div>
+  <div class="meta">
+    <span>👍 472</span>
+    <span>💬 126</span>
+    <span>🔥 1054.5</span>
+    <a href="https://www.producthunt.com/r/ZXC3TLTUHNL3JP?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">marketing</span><span class="tag">seo</span></div>
+</article>
+<article class="product">
+  <span class="rank">6</span>
+  <div class="name">Plurai Simulation</div>
+  <div class="tagline">A simulated world that makes your agent improve on every run</div>
+  <div class="desc">Find your agent’s worst bugs before your users do. One command in Claude Code, Codex or GitHub Copilot builds a digital twin of your agent’s world: synthetic personas and documents, plus mocked tools, APIs and databases, in sandboxes that never touch production.</div>
+  <div class="meta">
+    <span>👍 433</span>
+    <span>💬 140</span>
+    <span>🔥 1034.5</span>
+    <a href="https://www.producthunt.com/r/ZBKQ4BKXEJCORU?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">api-1</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">7</span>
+  <div class="name">Screen Studio 4.0</div>
+  <div class="tagline">Glass Loupe, Camera Cutout, Edit by Transcript, and more</div>
+  <div class="desc">The screen recorder for Mac that handles the hard parts: zooms, motion, sound, and framing. Every demo and tutorial comes out polished. What's new in 4.0: - Glass Loupe, a zoom that magnifies one detail - Split screen, also for vertical video - Edit your video like you edit text - Camera cutout: you, without your background - Hide sensitive data...</div>
+  <div class="meta">
+    <span>👍 477</span>
+    <span>💬 111</span>
+    <span>🔥 1020.8</span>
+    <a href="https://www.producthunt.com/r/MXBY2KB22GHVHB?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">marketing</span><span class="tag">video</span></div>
+</article>
+<article class="product">
+  <span class="rank">8</span>
+  <div class="name">Empacer</div>
+  <div class="tagline"> The voice-first assistant for small and medium businesses</div>
+  <div class="desc">Most SMB owners face the same problem when trying to use AI tools: they don't have time for re-explaining their business in every chat. Empacer is designed to skip this part. Three questions at setup, then spoken requests become a ready plan and finished work: customer replies, social posts, invoices and more. Nothing is sent without the owner's...</div>
+  <div class="meta">
+    <span>👍 490</span>
+    <span>💬 84</span>
+    <span>🔥 966.0</span>
+    <a href="https://www.producthunt.com/r/RXY756OTRKZOLG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">saas</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">9</span>
+  <div class="name">S.Space</div>
+  <div class="tagline">Your team and everyone's AI agents, in one workspace</div>
+  <div class="desc">Everyone on your team has an AI agent, and none of them work together, so you copy, paste and re-explain all day. S.Space is one workspace for your team and everyone's agents. Bring the ones you already use, like Claude Code and Codex, from any vendor. Agents reach out, hand work to each other and bring you finished results, with shared memory s...</div>
+  <div class="meta">
+    <span>👍 395</span>
+    <span>💬 123</span>
+    <span>🔥 930.8</span>
+    <a href="https://www.producthunt.com/r/3NGQFAYB2FLK2V?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">10</span>
+  <div class="name">Tobira Site Agent</div>
+  <div class="tagline">Turn your website into an AI agent that sells to AI agents</div>
+  <div class="desc">People already find you through AI. Tobira turns that AI traffic into real leads and customers. Paste your URL and in 10 minutes your website becomes an AI agent. It answers people and their AI, negotiates, books calls and takes orders right in customers' ChatGPT, Claude, Grok and other AI chats. Leads go to your Telegram or email. Also, AI agen...</div>
+  <div class="meta">
+    <span>👍 419</span>
+    <span>💬 102</span>
+    <span>🔥 909.0</span>
+    <a href="https://www.producthunt.com/r/LMNUHW4VUH6RGV?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">sales</span><span class="tag">customer-communication</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">11</span>
+  <div class="name">Vaani Developer Platform</div>
+  <div class="tagline">The only voice AI harness that you'll ever need</div>
+  <div class="desc">Build a voice agent that sounds and behaves human without writing a single line of code. Design the call flow, handle objections and edge cases, connect your tools and knowledge base, and go live on a real phone number. Every call ends with clean, structured data.</div>
+  <div class="meta">
+    <span>👍 406</span>
+    <span>💬 99</span>
+    <span>🔥 881.2</span>
+    <a href="https://www.producthunt.com/r/PLG3DPJZGCJSAB?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">artificial-intelligence</span><span class="tag">tech</span><span class="tag">audio</span></div>
+</article>
+<article class="product">
+  <span class="rank">12</span>
+  <div class="name">UnleashX</div>
+  <div class="tagline">The AI workforce that turns conversations into outcomes. </div>
+  <div class="desc">UnleashX lets you hire AI employees like people - pick a role, connect your CRM and tools, set your rules, and hand over the work. Execute workflows end-to-end, with humans stepping in only when needed.</div>
+  <div class="meta">
+    <span>👍 364</span>
+    <span>💬 118</span>
+    <span>🔥 870.5</span>
+    <a href="https://www.producthunt.com/r/LF5W4HZMDHS2VV?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span></div>
+</article>
+<article class="product">
+  <span class="rank">13</span>
+  <div class="name">Glasshand</div>
+  <div class="tagline">Give your agent a real iPhone and Mac</div>
+  <div class="desc">Glasshand gives your AI agents real iPhones and Macs to work on. Connect Claude Code, Codex, or any other agent, and it can rent a device with a single prompt. The hardware sits in our data center, and your agent uses it the way you would: posting on TikTok, booking an Uber, or building and testing iOS apps. Each device is yours alone for as lon...</div>
+  <div class="meta">
+    <span>👍 412</span>
+    <span>💬 82</span>
+    <span>🔥 843.5</span>
+    <a href="https://www.producthunt.com/r/4HPTGSLZ23MFLT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">artificial-intelligence</span><span class="tag">apple</span></div>
+</article>
+<article class="product">
+  <span class="rank">14</span>
+  <div class="name">Knocket AI</div>
+  <div class="tagline">Chat with visitors from your website or link</div>
+  <div class="desc">Give visitors a way to say hello. Add free live chat to your website or app, or turn your bio link into a personal contact page. Visitors can start chatting without signing up. Built for founders, creators, and small teams.</div>
+  <div class="meta">
+    <span>👍 362</span>
+    <span>💬 105</span>
+    <span>🔥 831.8</span>
+    <a href="https://www.producthunt.com/r/PZ4KKDP7MANWFR?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">customer-success</span><span class="tag">customer-communication</span></div>
+</article>
+<article class="product">
+  <span class="rank">15</span>
+  <div class="name">Product Hunt MCP</div>
+  <div class="tagline">The community you trust in the assistant you use</div>
+  <div class="desc">Ask your AI assistant to find your next favorite product. Explore new launches, compare alternatives, and see what the Product Hunt community thinks. Building something yourself? Turn your README and website into a launch draft, add images, and check what's missing before you submit. Sign in with Product Hunt to connect. No API key needed.</div>
+  <div class="meta">
+    <span>👍 471</span>
+    <span>💬 43</span>
+    <span>🔥 824.8</span>
+    <a href="https://www.producthunt.com/r/ERQDTXX2HLG67G?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">16</span>
+  <div class="name">AXL</div>
+  <div class="tagline">GTM copilot for AI product founders: 1,200+ actions via MCP</div>
+  <div class="desc">Capture leads, close sales & onboard customers in one system: pages, quizzes, webinars, courses, video hosting & streaming, email, chat, CRM, telephony & AI calls. No integrations to build & maintain. Every interaction enriches each lead's history. Our AI model, trained on 1M deals from AXL users, scores leads using 300+ signals to help your AI ...</div>
+  <div class="meta">
+    <span>👍 398</span>
+    <span>💬 68</span>
+    <span>🔥 784.0</span>
+    <a href="https://www.producthunt.com/r/I2M2MPP6UQVT6W?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">sales</span><span class="tag">marketing</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">17</span>
+  <div class="name">Rakazo</div>
+  <div class="tagline">The open source Grok Bot alternative you actually own</div>
+  <div class="desc">Rakazo gives you AI teammates that keep working after you close the chat. Each bot has its own memory, routines and computer, with a browser you can watch and take over. Open source and self-hosted: any model, your keys, your machine. Web, desktop and mobile.</div>
+  <div class="meta">
+    <span>👍 421</span>
+    <span>💬 45</span>
+    <span>🔥 755.2</span>
+    <a href="https://www.producthunt.com/r/JJD4SYA4D3EAB6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">android</span><span class="tag">productivity</span><span class="tag">open-source</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">18</span>
+  <div class="name">TestSprite 4.0</div>
+  <div class="tagline">Fix one thing, break another? This agent checks it all</div>
+  <div class="desc">Your coding agent fixes one thing and breaks another. TestSprite 4.0 is a brand-new testing agent that remembers what your app should do and checks all of it, every time. Tell it in plain words what to test. It explores your running app, writes and runs the end-to-end tests, tells you which failures are real bugs, and keeps checking every change...</div>
+  <div class="meta">
+    <span>👍 386</span>
+    <span>💬 56</span>
+    <span>🔥 733.0</span>
+    <a href="https://www.producthunt.com/r/7TKIXW445YMK2C?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">software-engineering</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span><span class="tag">github</span></div>
+</article>
+<article class="product">
+  <span class="rank">19</span>
+  <div class="name">Saparo</div>
+  <div class="tagline">Muse for shopping with deals stacks</div>
+  <div class="desc">Saparo is a personal shopping agent that stacks every deal. Tell it what you want, and it searches U.S. stores for the same item in your size, combining promo codes, cash back, and eligible card offers that work together. It ranks options by estimated total cost, including shipping and tax, so you skip the legwork. With your approval, Saparo app...</div>
+  <div class="meta">
+    <span>👍 348</span>
+    <span>💬 72</span>
+    <span>🔥 720.0</span>
+    <a href="https://www.producthunt.com/r/CGUN3ORBJWPLHU?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">e-commerce</span><span class="tag">tech</span></div>
+</article>
+<article class="product">
+  <span class="rank">20</span>
+  <div class="name">YouArt Desktop App</div>
+  <div class="tagline">Codex for creative team</div>
+  <div class="desc">Meet YouArt Desktop App: AI creative teammate that lives on your computer. Agent-first video production is here. Pull your local files and context from Slack, Gmail and GitHub onto one canvas, and with computer use it operates After Effects, CapCut and Blender directly. From feature launch videos to viral remakes and clips from your long videos,...</div>
+  <div class="meta">
+    <span>👍 357</span>
+    <span>💬 60</span>
+    <span>🔥 700.5</span>
+    <a href="https://www.producthunt.com/r/5TX6YWUYYRHQUE?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">marketing</span><span class="tag">artificial-intelligence</span><span class="tag">video</span></div>
+</article>
+<article class="product">
+  <span class="rank">21</span>
+  <div class="name">MyClaw 3.0</div>
+  <div class="tagline">Build an always-on AI team with shared memory</div>
+  <div class="desc">MyClaw lets you build your own AI team with OpenClaw, Claude Code, Codex, Hermes Agent, Pi, and more. Give each teammate its own role, tools, skills, and choice of 50+ models, with shared memory across your team. Your agents run on always-on cloud computers, use your apps, access data, and handle recurring tasks even when you're offline. Assign ...</div>
+  <div class="meta">
+    <span>👍 341</span>
+    <span>💬 62</span>
+    <span>🔥 682.0</span>
+    <a href="https://www.producthunt.com/r/I5P5AWTAYY2JLB?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">artificial-intelligence</span><span class="tag">business</span></div>
+</article>
+<article class="product">
+  <span class="rank">22</span>
+  <div class="name">Rankhog</div>
+  <div class="tagline">Get customers from Reddit on autopilot</div>
+  <div class="desc">Rankhog finds people on Reddit asking for what you sell. It reads each subreddit's rules, writes a reply that helps, and posts it from your own account at a human pace. Say yes to each reply, or turn on autopilot. No Reddit account? Rankhog warms up a new one, and you own it. Run it from the app, or from Claude, ChatGPT, Cursor and any MCP clien...</div>
+  <div class="meta">
+    <span>👍 364</span>
+    <span>💬 41</span>
+    <span>🔥 658.8</span>
+    <a href="https://www.producthunt.com/r/HVFQNHONLRBAJZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">marketing</span><span class="tag">artificial-intelligence</span><span class="tag">reddit</span></div>
+</article>
+<article class="product">
+  <span class="rank">23</span>
+  <div class="name">Motionflare</div>
+  <div class="tagline">Turn your website into a stunning launch video in minutes</div>
+  <div class="desc">Motionflare turns your website into a ready-to-share marketing video and brand film in minutes. Paste a URL and it uses your real product screenshots, logo, colors, and copy to create branded motion graphics with music and optional narration. Or switch to Film mode to generate a live-action commercial. Refine the result by chat and export in up ...</div>
+  <div class="meta">
+    <span>👍 347</span>
+    <span>💬 50</span>
+    <span>🔥 658.0</span>
+    <a href="https://www.producthunt.com/r/AM4QLKUSKUV34E?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">marketing</span><span class="tag">artificial-intelligence</span><span class="tag">video</span></div>
+</article>
+<article class="product">
+  <span class="rank">24</span>
+  <div class="name">Yoroll</div>
+  <div class="tagline">Build playable stories without a game engine</div>
+  <div class="desc">Yoroll lets anyone turn stories into playable, cinematic games without coding or a game engine. Start with a script, image, or video clip, then direct the scenes, add player choices, and create branching storylines with different outcomes. AI helps bring everything together into an interactive experience you can share. It's more like directing y...</div>
+  <div class="meta">
+    <span>👍 368</span>
+    <span>💬 34</span>
+    <span>🔥 645.5</span>
+    <a href="https://www.producthunt.com/r/XKLWN5SDJ5RSLW?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">artificial-intelligence</span><span class="tag">games</span><span class="tag">no-code</span></div>
+</article>
+<article class="product">
+  <span class="rank">25</span>
+  <div class="name">SKI</div>
+  <div class="tagline">Voice-first coding harness </div>
+  <div class="desc">Talk to your coding agents and hear them talk back. SKI runs Claude Code, Codex, Cursor, OpenCode, Antigravity and pi side by side on your Mac, and tells you the moment one needs you.</div>
+  <div class="meta">
+    <span>👍 322</span>
+    <span>💬 59</span>
+    <span>🔥 645.2</span>
+    <a href="https://www.producthunt.com/r/YRTZMFLGRKJM3F?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">developer-tools</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">26</span>
+  <div class="name">Specsight</div>
+  <div class="tagline">Product observability for teams shipping fast with AI</div>
+  <div class="desc">Shipping fast with AI? Specsight turns code changes into a living product map, feature knowledge, and clear release updates. Keep Product, Sales, and Support in sync with what your software actually does and what changed.</div>
+  <div class="meta">
+    <span>👍 335</span>
+    <span>💬 42</span>
+    <span>🔥 618.0</span>
+    <a href="https://www.producthunt.com/r/U5MK5YLVIQ7YIM?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">saas</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">27</span>
+  <div class="name">Bluedot Phone Calls</div>
+  <div class="tagline">AI note taker for phone calls</div>
+  <div class="desc">Bluedot now covers phone calls, not just meetings. Dial from the web or mobile app, keep your own caller ID, and get a transcript, summary and action items automatically.</div>
+  <div class="meta">
+    <span>👍 325</span>
+    <span>💬 46</span>
+    <span>🔥 614.0</span>
+    <a href="https://www.producthunt.com/r/ULWYTTAYG5XTLI?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">android</span><span class="tag">ios</span><span class="tag">productivity</span></div>
+</article>
+<article class="product">
+  <span class="rank">28</span>
+  <div class="name">HiringNow</div>
+  <div class="tagline">AI job agent that finds & apply for jobs before anyone else.</div>
+  <div class="desc">HiringNow checks 247,000+ company career sites every 5 minutes, so you see new jobs before they hit the big boards. It matches each job to your profile, tailors your resume and cover letter, and applies on the employer's own site, only with your approval. Every application gets a receipt in your job tracker. Also: resume builder and mock intervi...</div>
+  <div class="meta">
+    <span>👍 351</span>
+    <span>💬 30</span>
+    <span>🔥 609.0</span>
+    <a href="https://www.producthunt.com/r/WSO7S2YHKPGAXY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">artificial-intelligence</span><span class="tag">career</span></div>
+</article>
+<article class="product">
+  <span class="rank">29</span>
+  <div class="name">SpeakON Agent</div>
+  <div class="tagline">Turn natural speech into real work for an agent to complete</div>
+  <div class="desc">Turn natural speech into real work with SpeakON Agent. It understands your Notes, connects your tools, and prepares Actions for you to review and confirm.</div>
+  <div class="meta">
+    <span>👍 326</span>
+    <span>💬 38</span>
+    <span>🔥 593.5</span>
+    <a href="https://www.producthunt.com/r/GUQI7NTMSNKCWZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">hardware</span><span class="tag">artificial-intelligence</span></div>
+</article>
+<article class="product">
+  <span class="rank">30</span>
+  <div class="name">Claude Meetings</div>
+  <div class="tagline">Add Claude to your call and get work started as you talk</div>
+  <div class="desc">Claude Meetings lets you add Claude to a Google Meet call as a visible participant. The team can ask questions out loud or in chat, and Claude writes the notes and action items so no one on the call has to. It builds docs, whiteboards, and other artifacts during the call, and teammates on the invite can edit them as you talk. After the call, the...</div>
+  <div class="meta">
+    <span>👍 323</span>
+    <span>💬 13</span>
+    <span>🔥 520.2</span>
+    <a href="https://www.producthunt.com/r/BBCWQILYWRBAP6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI_Daily+%28ID%3A+290822%29" target="_blank" rel="noopener">访问官网 →</a>
+  </div>
+  <div class="meta tags"><span class="tag">productivity</span><span class="tag">meetings</span><span class="tag">artificial-intelligence</span></div>
+</article>
+</main>
+<footer>
+  <p>数据来源 <a href="https://www.producthunt.com" target="_blank" rel="noopener" style="color:var(--ph);">Product Hunt</a> · 由 GitHub Actions 每日自动更新</p>
+</footer>
+</body>
+</html>
